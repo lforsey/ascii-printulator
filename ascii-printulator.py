@@ -1,6 +1,5 @@
 ## Written by Liam Forsey 2022
 ## This program will return the ascii art versions of the letters you enter in terminal
-from operator import index
 import string
 ## First, we'll store all the ascii art alphabet characters IN A 0 INDEXED LIST FOO!
 
@@ -255,8 +254,9 @@ print()
 
 
 def get_index(initial):
-    index = string.ascii_lowercase.index(initial)
-    return index
+  initial = initial.lower()
+  initial = string.ascii_lowercase.index(initial)
+  return initial
 
 
 index_first = get_index(input("Enter your first initial here: "))
@@ -275,4 +275,4 @@ if index_last in range (0, 26):
     print(list_of_chars[index_last])
 
 print()
-input("Hit enter to exit this program at any time:")
+input("Hit enter to exit this program at any time")
