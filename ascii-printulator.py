@@ -1,7 +1,7 @@
 ## Written by Liam Forsey 2022
 ## This program will return the ascii art versions of the letters you enter in terminal
 import string
-## First, we'll store all the ascii art alphabet characters IN A 0 INDEXED LIST FOO!
+## First, we'll store all the block letter characters IN A 0 INDEXED LIST FOO!
 
 
 list_of_chars = [("""\
@@ -244,7 +244,7 @@ list_of_chars = [("""\
 
 ##Then, greet the user and ask for their initials in two different lines
 print()
-print("Hi, welcome to the ASCII generator")
+print("Hi, welcome to the ASCII printulator")
 print()
 print("This program was written by Liam Forsey 2022")
 print()
